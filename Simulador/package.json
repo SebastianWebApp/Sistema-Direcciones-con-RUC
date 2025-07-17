@@ -1,0 +1,29 @@
+{
+  "name": "maestro-detalle",
+  "version": "1.0.0",
+  "description": "software de maestro detalle para la empresa PrimeCode",
+  "main": "servidor.js",
+  "type": "module",
+  "scripts": {
+    "start": "node servidor.js",
+    "test": "jest"
+  },
+  "author": "Mateo Espinosa",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "16.4.7",
+    "express": "4.21.2",
+    "mongoose": "8.8.4",
+    "node-fetch": "^3.3.2",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@types/jest": "^29.5.14",
+    "babel-jest": "^30.0.0-beta.3",
+    "jest": "^29.7.0"
+  }
+}

@@ -1,0 +1,355 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;  
+    font-family: "Roboto", sans-serif;
+    background-color: #13265e; 
+}
+
+
+h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    text-align: left;
+}
+  
+h2{
+    font-size: 20px;
+    text-align: left;
+}
+h3{
+    text-align: left;
+    font-size: 18px;
+}
+p{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+  
+input{
+    width: 96%;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-top: 7px;
+    border-radius: 5px;
+    border-width: 1.5px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+
+
+  select{
+    width: 100%;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-top: 7px;
+    border-radius: 5px;
+    border-width: 1.5px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+
+  button{
+    width: 96%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #13265e;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 17px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+
+  #loading{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+  }
+  img{
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  #Regresar{
+    width: 100px;
+    margin-top: 20px;
+    background-color: #06176f;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+
+#ContenedorLoading{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#ContenedorGeneral{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#Contenedor1{
+    flex: 2;
+    padding-left: 40px;
+    background-color: white;
+    overflow-y: auto;
+}
+#Contenedor2{
+    flex: 1;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #13265e;
+    align-items: center;
+    text-align: center;
+}
+
+
+.Separacion{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Separacion div{
+    flex: 1;    
+    min-width: 150px;
+    height: fit-content;
+    margin-right: 4%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+.Separacion input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.employeeTable {
+    width: 96%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.employeeTable th, .employeeTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.employeeTable th {
+    background-color: #f2f2f2;
+}
+.employeeTable input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+      table {
+            width: 96%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            text-align: center;
+            background-color: #f2f2f2;
+        }      
+        .add-row {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 40px;
+            border-radius: 40px;
+        }
+        .delete-row {
+            background-color: #ff4444;
+            color: white;
+            border: none;
+            padding: 2px 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+    
+        .table-container {
+    overflow-x: auto;
+}
+
+#addressTable {
+    min-width: 1500px;
+}
+
+    .wide-column {
+        width: 10%;
+    }
+    .medium-column {
+        width: 20%;
+    }
+    .narrow-column {
+        width: 5%;
+    }
+
+.PerfilesCreados{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.PerfilesCreados P{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+hr{
+    border: 0;
+    height: 2px;
+    background-color: #000000;
+}
+
+#Informacion{
+    display: none;
+}
+
+
+/* Estilo del contenido de la alerta */
+#Div_Notificacion{
+    display: none;
+}
+
+.card {
+    width: 330px;
+    height: auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    right: 0px;
+  }
+  .wave {
+    position: absolute;
+    transform: rotate(90deg);
+    left: -31px;
+    top: 32px;
+    width: 80px;
+    fill: #ffa30d3a;
+  }
+  .icon-container {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa30d48;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+  .icon {
+    width: 17px;
+    height: 17px;
+    color: #db970e;
+  }
+  .message-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 10px;
+  }
+  .message-text,
+  .sub-text {
+    margin: 0;
+    cursor: default;
+  }
+  .message-text {
+    color: #db970e;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .sub-text {
+    font-size: 14px;
+    color: #555;
+  }
+  .cross-icon {
+    width: 18px;
+    height: 18px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+/* Fin Cuadro Alerta */
+
+@media screen  and (max-width:1000px){
+    #ContenedorGeneral{ 
+        overflow: unset;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    #Contenedor2{
+        height: auto;
+    }
+}    
+
+@media screen  and (max-width:600px){
+    #Contenedor1{
+        padding-left: 20px;
+        padding-right: 20px;
+    }   
+
+    input{
+        width: 100%;       
+      }
+
+    .Separacion div{
+        min-width: 100%;
+    }
+   
+    h1{
+        font-size: 35px;
+    }
+    button{
+        width: 100%;     
+      }
+}    
+

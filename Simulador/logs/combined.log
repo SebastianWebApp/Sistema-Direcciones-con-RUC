@@ -1,0 +1,12 @@
+[2025-07-17T12:54:15.932Z] INFO: Servidor Activo http://localhost:80
+[2025-07-17T12:54:17.731Z] INFO: Servidor Activo http://localhost:80
+[2025-07-17T12:54:31.321Z] INFO: Datos generales del cliente leídos correctamente
+[2025-07-17T12:54:31.325Z] INFO: Tiempo de ejecución leer cliente: 196.73480000000018 ms
+[2025-07-17T12:55:45.733Z] INFO: Datos generales del cliente leídos correctamente
+[2025-07-17T12:55:45.793Z] INFO: Tiempo de ejecución leer cliente: 385.0890999999974 ms
+[2025-07-17T12:56:42.812Z] INFO: Tiempo de ejecución consultar RUC: 511.04689999998664 ms
+[2025-07-17T12:57:20.257Z] INFO: Ruc encriptado: d3dc33da73ed960d0d289c080f1ffe21
+[2025-07-17T12:57:20.427Z] INFO: Datos generales del cliente creados correctamente: 6878f330307b73bbe14e0e6a
+[2025-07-17T12:57:20.429Z] INFO: Teléfono encriptado: 25506f744c00cd266d6c061d7a3237a0
+[2025-07-17T12:57:20.444Z] INFO: Información legal creado correctamente: 6878f330307b73bbe14e0e6a
+[2025-07-17T12:57:24.953Z] INFO: Servidor Activo http://localhost:80

@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+
+  # <-------------------------------------- Bases de datos ---------------------------------------------------->
+
+  base_mongoDB:
+    image: mongo:latest
+    container_name: base_mongoDB
+    ports:
+      - "27017:27017"
+    
+    restart: always # Reinicio del microservicio en caso de fallo
+
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - app-network
+  
+  
+  # <-------------------------------------- Microservicios ---------------------------------------------------->
+
+  # Servicio del Frontend
+  maestro_detalle_test:
+    build:
+      context: ./ # En donde se encuentra el archivo Dockerfile
+    container_name: maestro_detalle_test
+    image: novadev/maestro_detalle_test:latest
+    ports:
+      - "80:80"  # Mapea el puerto 3000
+
+    
+    restart: always # Reinicio del microservicio en caso de fallo
+
+
+    depends_on:
+      - base_mongoDB
+ 
+    networks:
+      - app-network # Si no se coloca en la misma red no van a poder interactuar
+
+
+
+
+# <----------------------- Configuración de redes y volúmenes ------------------------------------------>
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+
+  mongodb_data:
+    driver: local
